@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>欢迎进入</title>
+		<style>
+			.text {
+				text-align: center;
+				font-family: "arial rounded mt bold";
+				font-size: xx-large;
+				padding: 100px 200px 0px 200px;
+				margin-bottom: 0px;
+				color: darkgray;
+			}
+
+			.button {
+				display: inline-block;
+				border-radius: 4px;
+				background-color: deepskyblue;
+				border: none;
+				color: black;
+				text-align: center;
+				font-size: 28px;
+				padding: 20px;
+				width: 200px;
+				transition: all 0.5s;
+				cursor: pointer;
+				margin: 20px;
+				margin-right: auto;
+				margin-left: auto;
+			}
+
+			.button span {
+				cursor: pointer;
+				display: inline-block;
+				position: relative;
+				transition: 0.5s;
+			}
+
+			.button span:after {
+				content: '»';
+				position: absolute;
+				opacity: 0;
+				top: 0;
+				right: -20px;
+				transition: 0.5s;
+			}
+
+			.button:hover span {
+				padding-right: 25px;
+			}
+
+			.button:hover span:after {
+				opacity: 1;
+				right: 0;
+			}
+
+			body {
+				background-image: url(imge/开场动画图.jpg);
+				< !--图片来源http： //m.netbian.com-->
+				background-size: over;
+				background-attachment: fixed;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="text">
+			<marquee direction="up" behavior="slide" scrollamount="15" scrolldelay="10" loop="1" height="160px">
+				<center>
+					<h1>计算机类m1803</h1>
+				</center>
+			</marquee>
+			<marquee direction="up" behavior="slide" scrollamount="15" scrolldelay="10" loop="1" height="160px">
+				<center>
+					<p>I love you three thousand </P>
+					<center>
+			</marquee>
+		</div>
+		<form method="get" action="主页.html">
+			<center><button class="button" style="vertical-align:middle "><span>Welcome </span></button></center>
+		</form>
+
+
+	</body>
+</html>

@@ -1,0 +1,187 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'montserrat', sans-serif;
+	box-sizing: border-box;
+}
+
+.section {
+	width: 100%;
+	height: 900px;
+	margin-bottom: 0px;
+	padding: 20px;
+}
+
+/*.inner-width {
+ 	width: 100%;
+ 	max-width: 1200px;
+ 	margin: auto;
+ 	padding: 0 20px;
+ 	overflow: hidden;
+ }*/
+
+.altitle {
+	text-align: center;
+	color: #ddd;
+	text-transform: uppercase;
+	font-size: 150px;
+	margin-top: 160px;
+}
+
+.border {
+	width: 400px;
+	height: 2px;
+	background: #82ccdd;
+	margin: 40px auto;
+}
+
+.services-container {
+	margin-top: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 325px;
+	justify-content: center;
+	z-index: 12;
+	position: fixed;
+}
+
+.box {
+	max-width: 33.3%;
+
+	padding: 10px;
+	text-align: center;
+	color: #ddd;
+	cursor: pointer;
+}
+
+.icon {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	border: 3px solid #28A4C9;
+	border-radius: 10px;
+	color: #82ccdd;
+	transform: rotate(45deg);
+	margin-bottom: 30px;
+	margin-top: 16px;
+	transition: 0.4s linear;
+
+}
+
+.icon span {
+	line-height: 62px;
+	transform: rotate(-45deg);
+	font-size: 32px;
+	color: #28A4C9;
+}
+
+.box:hover .icon {
+	background: #82ccdd;
+	color: #ddd;
+	transform: rotate(-360deg)scale(1.5);
+}
+
+.box:hover .icon span {
+	transform: rotate(0deg)scale(1.2);
+}
+
+.title {
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	color: white;
+}
+
+#text1 {
+	background: url(imge/b.jpg) center no-repeat;
+	/*图片来源--www.bilibili.com*/
+	background-size: 100% 100%;
+
+	font-size: 18px;
+	color: white;
+	margin: 0;
+	padding: 20px;
+
+}
+
+#text2 {
+	background: url(imge/123.png) bottom center no-repeat #efeff4;
+	/*图片来源--www.bilibili.com*/
+	background-size: 100% 100%;
+
+	font-size: 18px;
+	color: white;
+	padding: 20px;
+}
+
+#text3 {
+	background: url(imge/2.jpg) bottom center no-repeat #efeff4;
+	/*图片来源--www.bilibili.com*/
+	background-size: 100% 100%;
+
+	font-size: 18px;
+	color: white;
+	padding: 20px;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: transparent;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	transform: rotate(-360deg) scale(1.1);
+	z-index: 11;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.class-text {
+	padding: 30px;
+}
+
+
+
+.class-text p {
+	display: inline-block;
+	color: white;
+	font-size: 30px;
+	width: 600px;
+	padding: 0 10px;
+}
+
+#text3 img {
+	width: 500px;
+	height: 300px;
+	float: left
+}
+
+#div2 img{
+            float:left;
+             width: 600px;
+          height: 400px;
+        }
+		#div3 img{
+            float:left;
+          width: 600px;
+		  height: 400px;
+        }
+		
+        #div1{margin: 0px auto;
+            width:600px;
+            height:400px;
+           overflow: hidden;
+            border:ridge 15px;
+			border-color: rgba(200,250,250,0.5)
+			
+        }
+       
+        #div4{
+            width:8000px;
+        }

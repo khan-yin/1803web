@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Author" content="chenyingduwang">
+		<title>whut计算机类m1803班</title>
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="样式.css" />
+		<script src="jquery.min.js"></script>
+		
+		<script src="jquery.fullPage.min.js"></script>
+		<script>
+			$(function() {
+				$('#加油').fullpage({
+					anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+				});
+			});
+		</script>
+		<script>
+			
+			$(document).ready(function() {
+				$("#wangling").click(function() {
+                    
+					$("#good").fadeOut(1000);
+					$("#dh").fadeOut(1000);
+					$("#d1").fadeOut(1000);
+					$("#d3").fadeOut();
+					$("#d4").fadeOut();
+					$("#d5").fadeOut();
+					$("#d6").fadeOut();
+					$("#t1").fadeIn(1000).delay(1000).fadeOut(1000);
+					/*$("#t1").show(2000);
+					$("#t1").hide(2000);*/
+
+					$("#t2").delay(3500).fadeIn(1000).delay(1000).fadeOut(1000);
+
+					$("#t3").delay(7000).fadeIn(1000).delay(1000).fadeOut(1000);
+					$("#t4").delay(10000).fadeIn();
+					$("#dh").delay(10000).fadeIn(1000);
+					$("#d2").fadeIn(1000);
+					$("#good").delay(10000).fadeIn();
+				});
+			});
+		</script>
+
+		<!--轮播js -->
+		<script type="text/javascript">
+			window.onload = function() {
+				var v1 = document.getElementById('div1');
+				var v2 = document.getElementById('div2');
+				var v3 = document.getElementById('div3');
+		
+				v3.innerHTML = v2.innerHTML;
+		
+				function fun() {
+					if (v1.scrollLeft <= 0) {
+						v1.scrollLeft = 3600;
+					} else {
+						v1.scrollLeft--;
+					}
+				}
+		
+				var fun1 = setInterval(fun, 10);
+		
+				v1.onmouseover = function() {
+					clearInterval(fun1)
+				};
+				v1.onmouseout = function() {
+					fun1 = setInterval(fun, 8)
+				};
+			}
+
+        </script>
+		<script>
+        	$(document).ready(function(){
+        	$("#ww").click(function(){
+				$("#dh").fadeOut();
+				$("#d1").fadeOut();
+				$("#d2").fadeOut();
+				$("#d4").fadeOut();
+				$("#d5").fadeOut();
+				$("#d6").fadeOut();
+				$("#dh").fadeIn(1500);
+        		$("#d3").fadeIn(1500);
+        	 });
+        	 }); 
+       
+		</script>
+		
+<script>
+	
+	$(document).ready(function(){
+	  $("#dushu").click(function(){
+	 	$("#dh").fadeOut();
+	 	$("#d1").fadeOut();
+	 	$("#d2").fadeOut();
+		$("#d3").fadeOut();
+		$("#d5").fadeOut();
+		$("#d6").fadeOut();
+	 	$("#dh").fadeIn(1500);
+	 	$("#d4").fadeIn(1500);
+	  });
+	 });
+	
+	 $(document).ready(function(){
+	  $("#zy").click(function(){
+	 $("#dh").fadeOut();
+	 $("#d1").fadeOut();
+	 $("#d2").fadeOut();
+	 $("#d3").fadeOut();
+	 $("#d4").fadeOut();
+	 $("#d5").fadeOut();
+	 $("#dh").fadeIn(1500);
+	 $("#d6").fadeIn(1500);
+	  });
+	}); 
+	 
+</script>
+
+<script>
+	 
+	$(document).ready(function(){
+	  $("#2wm").hover(function(){
+	 	$("#dh").fadeOut();
+	 	$("#d1").fadeOut();
+	 	$("#d2").fadeOut();
+	 	$("#d3").fadeOut();
+	 	$("#d4").fadeOut();
+		$("#d6").fadeOut();
+	 	$("#dh").fadeIn(1500);
+	 	$("#d5").fadeIn(1500);
+	  });
+	 });
+	 
+</script>
+	</head>
+
+	<body>
+
+
+		<!--导航栏-->
+		<div class="services-container" id="good">
+
+			<div class="box">
+				<div class="icon">
+					<!--图标来源--https://glyphicons.com-->
+					<a id="wangling" href="#page2"><span class="glyphicon glyphicon-user"></span></a>
+					<!--超链接-->
+				</div>
+				<div class="title">班级简介</div>
+				<div class="text">
+					请多多关注本班鸭！
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="icon">
+					<!--图标来源--https://glyphicons.com-->
+					<a  id="ww" href="#page3"><span class="glyphicon glyphicon-picture"></span></a>
+					<!--超链接-->
+				</div>
+				<div class="title">班级风采</div>
+				<div class="text">
+					这是专属于我们的荣耀！
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="icon">
+					<!--图标来源--https://glyphicons.com-->
+					<a  id="dushu"  href="#page4"><span class="glyphicon glyphicon-music"></span></a>
+					<!--超链接-->
+				</div>
+				<div class="title">班级推荐</div>
+				<div class="text">
+					一首歌、一本书、一部电影
+				</div>
+			</div>
+
+
+
+			<div  class="box">
+				<div  class="icon dropdown">
+					<div class="dropdown-content">
+						<!--图标来源--https://glyphicons.com-->
+						<img id="2wm" src="imge/二维码.jpg" width="100px" height="150px">
+					</div>
+					<span  class="glyphicon glyphicon-qrcode"></span>
+				</div>
+				<div class="title">关于我们</div>
+				<div class="text">
+					要了解更多关于我们的事吗？
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="icon">
+					<!--图标来源--https://glyphicons.com-->
+					<a id="zy" href="#page1"><span class="glyphicon glyphicon-off"></span></a>
+					<!--超链接-->
+				</div>
+				<div class="title">回到主页</div>
+				<div class="text">
+					I love you three thousand
+				</div>
+			</div>
+
+		</div>
+
+      <div id="dh" style=" float: right; position: fixed; right:100px;top:400px;  z-index: 1;">
+			<div id="d1" style=" width: 200px; height: 80px; background-color: white; z-index: 1;">
+				hello!我是小苏苏<br>
+				欢迎大家来观看我们的网页<br>
+				接下来就由我带大家进入我们的神秘世界<br>
+				</div>
+			<div id="d2" style=" display: none; width: 120px; height: 60px; background-color: white; z-index: 1;" >
+				噜噜噜噜，我最喜欢我们班长了！超级负责哟！
+			</div>
+			
+			<div id="d3"style=" display: none; width: 160px; height: 60px; background-color: white; z-index: 1;">
+				下面就是我们的一些班级风采了鸭！鼠标移动到图片上有神奇的效果哦！
+			</div>
+			
+			<div id="d4" style=" display: none; width: 200px; height: 60px; background-color: white; z-index: 1;">
+				图片看累了吧，那不如来看看我们班推荐的作品吧！<br>
+				但是平时要记得好好学习哦！
+			</div>
+			
+			<div id="d5"style=" display: none; width: 160px; height: 60px; background-color: white; z-index: 1;">
+				嘟嘟嘟，这是我们班的班级群，期待你的加入哦！
+			</div>
+			
+			<div id="d6"style=" display: none; width: 160px; height: 60px; background-color: white; z-index: 1;">
+				欢迎回到主页，苏苏希望你下次再来呢！
+			</div>
+			<img src="imge/xhl.png" style="height: 125px; width: 125px;" />
+			
+		</div>
+
+		<div id="加油">
+
+			<embed src="1.mp3" height="0px" width="0px"></embed>
+			<!--网易云https://music.163.com-->
+			<!--主页-->
+			<div class="section" style="background-image: url(imge/万家灯火.jpg);">
+				<!--图片来源--www.bilibili.com-->
+
+				<h1 class="altitle">Our Class</h1>
+				<div class="border"></div>
+
+			</div>
+
+
+
+			<!--班级介绍-->
+			<div class="section" id="text1">
+				<h2>
+					<center><b>班级简介</b></center>
+				</h2>
+				<div class="class-text">
+					<div id="t1" style="display: none;">
+						<img src="imge/合照.jpg" width="800px" height="600px" style=" float: right ;">
+
+						<p style="background-color: black; opacity: 0.5;" width="50%">
+							本班名为计算机类m1803班，成立于2018年8月.<br>
+							班级共有38人，女生5人，男生33人。<br>
+							我们是一群勤奋努力有上进心的，是一群肯吃苦爱钻研的大学生。<br>
+							我们来自不同的地方，有着不同的梦想，有着不同的爱好。<br>
+							但是，我们都一样怀揣着理想，对青春饱含希望，有很强的集体荣誉感。<br>
+							在全体同学的努力下，我们一定能创造辉煌！<br>
+						</p>
+
+
+					</div>
+
+
+					<div id="t2" style="display: none;">
+						<img src="imge/班主任.jpg" width="800px" height="600px" style="float: right ;">
+						<p style="background-color: black; opacity: 0.5;" width="50%">
+							这是我们的班主任向广利老师（鸽王）。<br>
+							虽然他很忙，但是他还是偶尔晚自习来看看我们。<br>
+							他也和我们讲过很多关于计算机的知识与奥秘。<br>
+						</p>
+					</div>
+
+					<div id="t3" style="display: none;">
+						<img src="imge/党员.jpg" width="800px" height="600px"  style="float: right ;">
+						<p style="background-color: black; opacity: 0.5;" width="50%">
+							这是我们的带班党员<br>
+							常常抽空了解我们的情况<br>
+						</p>
+					</div>
+
+					<div id="t4" style="display: none;">
+						<img src="imge/我自己.jpg" width="240px" height="320px" style="float: right;">
+						<img src="imge/云龙兄.jpg" width="360px" height="270px" style="float: right;">
+						<p style="background-color: black; opacity: 0.5;" width="50%">
+							接下来就是。。。。<br>
+							我们敬业的班长和帅气的团支书<br>
+							感谢他们的劳动和付出让我们感受到集体的温暖<br>
+							</p>
+						<br>
+						<p style="font-size: 40px;">
+							Our stories never stop,<br>
+							We keep on running all the time...<br>
+						</p>
+
+					</div>
+
+
+
+				</div>
+			</div>
+			<!--班级风采-->
+			<div class="section" id="text2">
+				<center>
+					<h2><b>班级风采</b></h2>
+					<p>(有图有真相哦)</p>
+	</center>
+
+					<!-- 轮播div-->
+
+					<div id="div1">
+						<div id="div4">
+
+							<div id="div2">
+								<img src="imge/11.jpg">
+								<img src="imge/12.jpg">
+								<img src="imge/14.jpg">
+								<img src="imge/15.jpg">
+								<img src="imge/17.jpg">
+								<img src="imge/18.jpg">
+
+
+							</div>
+
+							<div id="div3"></div>
+							
+
+						</div>
+					</div>
+					</div>
+			
+			<!--班级推荐-->
+			<div class="section" id="text3">
+				<div class="wenhua">
+					<center>
+						<h2><b>班级推荐</b></h2>
+					</center>
+
+					<div  style="background-color: black; opacity: 0.7;" >
+						<h3>一首歌：</h3>
+						《Oneday》————The ROOTLESS<br />
+						<p><b>推荐理由：</b>海贼王主题曲之一，one day，是顶上战争篇的主题曲。
+							结合兄弟之间的感情，听者必然感触颇深。<br />
+							正如歌词所讲，正是由于艾斯的死，路飞得以真正的成长，为了保护伙伴变得更强。</p>
+					</div>
+					<div style="background-color: black; opacity: 0.7;">
+						<h3>一本书：</h3>
+						《龙族》————江南<br />
+						“你陪了我多少年，花开花落。一路上起起跌跌。”<br />
+						<p><b>推荐理由：</b>很久之前就在看的《龙族》，从第一部开始，到现在已有十年，十年来有着青春与热血，亦有孤独与悲伤，这就是《龙族》（组队寄刀片的有木有）</p>
+						</div>
+						<div style="background-color: black; opacity: 0.7;">
+							<h3>一部电影:</h3>
+							《可可西里》————陆川<br />
+							<p><b>推荐理由</b>《可可西里》是华谊兄弟传媒股份有限公司出品的一部剧情片，由陆川执导，多布杰、张磊、奇道等主演<br />
+								影片讲述了记者尕玉和巡山队员为了保护可可西里的藏羚羊和生态环境，与藏羚羊盗猎分子顽强抗争甚至不惜牺牲生命的故事。————摘自百度。
+					
+						</div>
+					
+				</div>
+				</div>
+					</body>
+				
+				</div>
+		   </body>
+				
+				
+				
+	</html>
